@@ -22,15 +22,15 @@ string Name = Console.ReadLine();
 Console.WriteLine($"Привет {Name}");
 
 string day = DateTime.Now.DayOfWeek.ToString();
-Console.WriteLine("Сегодня: {day}");
+Console.WriteLine($"Сегодня: {day}");
 
 Console.Write("Хочешь продолжить? (y/n)");
 string prod = Console.ReadLine().ToLower();
 
-if (prod=="y || prod == "yes" || prod == "da")
+if (prod=="y" || prod == "yes" || prod == "da")
 {
-    Console.WriteLine("Продолжим..")
-    Console.WriteLine("$Твое имя состоит из {Name.Length} букв");
+    Console.WriteLine("Продолжим..");
+    Console.WriteLine($"Твое имя состоит из {Name.Length} букв");
 }
 else
 {
